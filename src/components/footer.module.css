@@ -1,6 +1,6 @@
 .footer {
   background-color: #972a29;
-  height: 120px;
+  height: 180px;
   width: 100vw;
 }
 
@@ -39,4 +39,9 @@ select_div {
   background-color: #972a29;
   height: 40px;
   width: 100px;
+}
+
+.footer_list p:hover {
+  opacity: 0.4;
+  cursor: pointer;
 }
