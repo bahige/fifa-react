@@ -7,14 +7,33 @@ App {
   width: 100vw;
 }
 
-#navbar {
+.navbar {
   grid-column-start: 1;
   grid-column-end: 2;
   width: 15vw;
-  /* display: none; */
+  animation-name: navbar_animate 1s forwards;
+  
 }
 
-#routed_comp {
+.routed_comp {
   grid-column-start: 2;
   width: 85vw;
+}
+
+.routed_comp_expand {
+  grid-column-start: 1;
+  width: 100vw;
+}
+
+.navbar_hide {
+  display: none;
+}
+
+@keyframes navbar_animate {
+  from {
+    display: block;
+  }
+  to {
+    display: none;
+  }
 }

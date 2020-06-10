@@ -6,7 +6,7 @@ import Instagram from "../assets/instagram.png";
 import Menu from "../assets/three_menu.png";
 import headerstyle from "../components/header.module.css";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div className={headerstyle.header}>
       <img
@@ -30,7 +30,12 @@ const Header = () => {
           src={Instagram}
           alt="instagram_log"
         ></img>
-        <img className={headerstyle.social_media} src={Menu} alt="menu"></img>
+        <img
+          onClick={props.clickMenu}
+          className={headerstyle.social_media}
+          src={Menu}
+          alt="menu"
+        ></img>
       </div>
     </div>
   );
