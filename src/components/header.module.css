@@ -1,0 +1,38 @@
+.header {
+  background-color: #972a29;
+  height: 120px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+}
+
+.social_media {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+
+.social_media:hover {
+  cursor: pointer;
+  animation: zoom_out 1s forwards;
+}
+
+.social_media_container {
+  margin-right: 10px;
+}
+
+@keyframes zoom_out {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
