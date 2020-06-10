@@ -1,0 +1,42 @@
+.footer {
+  background-color: #972a29;
+  height: 120px;
+  width: 100vw;
+}
+
+.footer_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+
+select {
+  font-size: 18px;
+  background-color: #972a29;
+  color: white;
+  padding: 5px;
+  width: 150px;
+}
+
+select option {
+  padding: 20px;
+}
+
+.last_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 14px;
+}
+
+select_div {
+  border: solid white 1px;
+}
+
+.dummy_div {
+  background-color: #972a29;
+  height: 40px;
+  width: 100px;
+}
