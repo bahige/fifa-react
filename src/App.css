@@ -14,12 +14,12 @@ App {
   animation-name: navbar_animate 1s forwards;
 }
 
-.routed_comp {
+.home_comp {
   grid-column-start: 2;
   width: 85vw;
 }
 
-.routed_comp_expand {
+.home_comp_expand {
   grid-column-start: 1;
   width: 100vw;
 }

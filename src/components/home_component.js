@@ -1,8 +1,8 @@
 import React from "react";
 import Background from "../assets/World_Cup_Background.jpg";
-import Styles from "../components/routed_component.module.css";
+import Styles from "../components/home_component.module.css";
 
-const RoutedComponent = () => {
+const HomeComponent = () => {
   return (
     <div className={Styles.container}>
       <img src={Background} alt="background"></img>
@@ -10,4 +10,4 @@ const RoutedComponent = () => {
   );
 };
 
-export default RoutedComponent;
+export default HomeComponent;

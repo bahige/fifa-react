@@ -3,14 +3,16 @@ import React, { Component } from "react";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
-import RoutedComponent from "./components/routed_component";
+import HomeComponent from "./components/home_component";
+import Teams from "./components/teams";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       navbarClass: "navbar_hide",
-      routedCompClass: "routed_comp_expand",
+      routedCompClass: "home_comp_expand",
     };
     this.displayNavbar = this.displayNavbar.bind(this);
   }
@@ -18,37 +20,47 @@ class App extends Component {
   displayNavbar() {
     if (
       this.state.navbarClass === "navbar" &&
-      this.state.routedCompClass === "routed_comp"
+      this.state.routedCompClass === "home_comp"
     ) {
       this.setState({
         navbarClass: "navbar_hide",
-        routedCompClass: "routed_comp_expand",
+        routedCompClass: "home_comp_expand",
       });
     } else if (
       this.state.navbarClass === "navbar_hide" &&
-      this.state.routedCompClass === "routed_comp_expand"
+      this.state.routedCompClass === "home_comp_expand"
     ) {
       this.setState({
         navbarClass: "navbar",
-        routedCompClass: "routed_comp",
+        routedCompClass: "home_comp",
       });
     }
   }
 
   render() {
+    const { navbarClass, routedCompClass } = this.state;
+
     return (
-      <div id="main_container">
-        <Header clickMenu={this.displayNavbar}></Header>
-        <div id="body">
-          <div className={this.state.navbarClass}>
-            <Navbar></Navbar>
+      <BrowserRouter>
+        <div id="main_container">
+          <Header clickMenu={this.displayNavbar}></Header>
+
+          <div id="body">
+            <div className={navbarClass}>
+              <Navbar></Navbar>
+            </div>
+
+            <div className={routedCompClass}>
+              <Switch>
+                <Route exact path="/" component={HomeComponent}></Route>
+                <Route exact path="/all_teams" component={Teams}></Route>
+              </Switch>
+            </div>
           </div>
-          <div className={this.state.routedCompClass}>
-            <RoutedComponent></RoutedComponent>
-          </div>
+
+          <Footer></Footer>
         </div>
-        <Footer></Footer>
-      </div>
+      </BrowserRouter>
     );
   }
 }

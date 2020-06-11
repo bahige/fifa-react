@@ -5,15 +5,18 @@ import Twitter from "../assets/twitter.png";
 import Instagram from "../assets/instagram.png";
 import Menu from "../assets/three_menu.png";
 import headerstyle from "../components/header.module.css";
+import { Link } from "react-router-dom";
 
 const Header = (props) => {
   return (
     <div className={headerstyle.header}>
-      <img
-        className={headerstyle.logo}
-        src={WorldCupLogo}
-        alt="World Cup Logo"
-      ></img>
+      <Link to="/">
+        <img
+          className={headerstyle.logo}
+          src={WorldCupLogo}
+          alt="World Cup Logo"
+        ></img>
+      </Link>
       <div className={headerstyle.social_media_container}>
         <img
           className={headerstyle.social_media}

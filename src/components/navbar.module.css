@@ -2,7 +2,6 @@
   background-color: #972a29;
   color: white;
   font-size: large;
-  /* width: 15vw; */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,6 +18,11 @@
   height: 100px;
   line-height: 100px;
   text-align: center;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .navbar div:hover {
