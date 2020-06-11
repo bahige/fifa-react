@@ -2,9 +2,11 @@
   background-color: #972a29;
   height: 180px;
   width: 100vw;
+  box-sizing: border-box;
 }
 
-.footer_list {
+.footer_list,
+.row_list {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -44,4 +46,43 @@ select_div {
 .footer_list p:hover {
   opacity: 0.4;
   cursor: pointer;
+}
+
+@media screen and (max-width: 414px) {
+  .footer {
+    font-size: 10px;
+    text-align: center;
+    padding: 1px;
+    height: 120px;
+  }
+
+  select {
+    font-size: 12px;
+    padding: 5px;
+    width: 100px;
+    margin-left: 2px;
+  }
+
+  select option {
+    padding: 20px;
+  }
+
+  .dummy_div {
+    display: none;
+  }
+
+  .last_row {
+    font-size: 10px;
+    justify-content: space-between;
+  }
+
+  .row_list p {
+    width: 150px;
+    margin-right: 5px;
+  }
+
+  .footer_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

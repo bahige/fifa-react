@@ -12,7 +12,6 @@ App {
   grid-column-end: 2;
   width: 15vw;
   animation-name: navbar_animate 1s forwards;
-  
 }
 
 .routed_comp {
@@ -35,5 +34,16 @@ App {
   }
   to {
     display: none;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .navbar {
+    width: 25vw;
+  }
+
+  .routed_comp {
+    grid-column-start: 2;
+    width: 75vw;
   }
 }

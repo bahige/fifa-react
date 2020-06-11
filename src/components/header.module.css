@@ -37,3 +37,21 @@
     transform: scale(1.1);
   }
 }
+
+@media screen and (max-width: 414px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+  }
+
+  .social_media {
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+  }
+
+  .header {
+    height: 100px;
+  }
+}

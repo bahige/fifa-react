@@ -10,3 +10,15 @@ img {
   box-sizing: border-box;
   background-color: goldenrod;
 }
+
+@media screen and (max-width: 414px) {
+  .container {
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 1024px) {
+  .container {
+    height: 70vh;
+  }
+}

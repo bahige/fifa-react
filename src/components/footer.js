@@ -23,7 +23,7 @@ const Footer = () => {
             <option> عربي </option>
           </select>
         </div>
-        <div className={footerstyle.footer_list}>
+        <div className={footerstyle.row_list}>
           <p> Copyright ©1994 - 2020 FIFA. All Rights Reserved.</p>
         </div>
         <div className={footerstyle.dummy_div}></div>

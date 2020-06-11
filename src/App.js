@@ -5,7 +5,7 @@ import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import RoutedComponent from "./components/routed_component";
 
-export class App extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -40,10 +40,10 @@ export class App extends Component {
       <div id="main_container">
         <Header clickMenu={this.displayNavbar}></Header>
         <div id="body">
-          <div class={this.state.navbarClass}>
+          <div className={this.state.navbarClass}>
             <Navbar></Navbar>
           </div>
-          <div class={this.state.routedCompClass}>
+          <div className={this.state.routedCompClass}>
             <RoutedComponent></RoutedComponent>
           </div>
         </div>
