@@ -1,7 +1,6 @@
 .singleTeam {
   width: 22vw;
   height: 400px;
-  /* border: solid black 1px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +13,6 @@
 .singleTeam img {
   width: 250px;
   height: 250px;
-  border-radius: 250px;
   transition: transform 1s;
 }
 
@@ -44,4 +42,61 @@
   padding: 20px;
   height: 100vh;
   overflow-x: scroll;
+}
+
+/*************************Phone********************************************/
+
+@media screen and (max-width: 414px) {
+  .singleTeam img {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+  }
+
+  #caption {
+    font-size: 14px;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .singleTeam {
+    width: 70vw;
+    height: 250px;
+    padding-top: 20px;
+    margin: auto;
+  }
+
+  #teams_grid {
+    border: black solid 1px;
+    height: 70vh;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    overflow-x: scroll;
+  }
+}
+
+/*************************Tablet********************************************/
+
+@media screen and (min-width: 415px) and (max-width: 1024px) {
+  .singleTeam img {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+  }
+
+  #caption {
+    font-size: 22px;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .singleTeam {
+    height: 300px;
+  }
+
+  #teams_grid {
+    height: 70vh;
+  }
 }

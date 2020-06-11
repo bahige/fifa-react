@@ -8,6 +8,12 @@
   margin: 0;
 }
 
+.logo_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .logo {
   width: 100px;
   height: 100px;
@@ -43,6 +49,10 @@
     width: 60px;
     height: 60px;
     margin-left: 20px;
+  }
+
+  .logo_container {
+    height: 60px;
   }
 
   .social_media {

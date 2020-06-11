@@ -6,6 +6,11 @@ import Navbar from "./components/navbar";
 import HomeComponent from "./components/home_component";
 import Teams from "./components/teams";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import TeamsAfrica from "./components/teams _africa";
+import TeamsAsia from "./components/teams _asia";
+import TeamsEurope from "./components/teams _europe";
+import TeamsSouthAmerica from "./components/teams _southamerica";
+import TeamsNorthAmerica from "./components/teams _northamerica";
 
 class App extends Component {
   constructor(props) {
@@ -54,6 +59,19 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" component={HomeComponent}></Route>
                 <Route exact path="/all_teams" component={Teams}></Route>
+                <Route exact path="/caf" component={TeamsAfrica}></Route>
+                <Route exact path="/afc" component={TeamsAsia}></Route>
+                <Route
+                  exact
+                  path="/conmebol"
+                  component={TeamsSouthAmerica}
+                ></Route>
+                <Route
+                  exact
+                  path="/concacaf"
+                  component={TeamsNorthAmerica}
+                ></Route>
+                <Route exact path="/uefa" component={TeamsEurope}></Route>
               </Switch>
             </div>
           </div>

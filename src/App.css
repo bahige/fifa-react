@@ -1,7 +1,3 @@
-App {
-  margin: 0;
-}
-
 #body {
   display: grid;
   width: 100vw;
@@ -42,7 +38,7 @@ App {
     width: 25vw;
   }
 
-  .routed_comp {
+  .home_comp {
     grid-column-start: 2;
     width: 75vw;
   }

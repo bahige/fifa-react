@@ -10,13 +10,21 @@ import { Link } from "react-router-dom";
 const Header = (props) => {
   return (
     <div className={headerstyle.header}>
-      <Link to="/">
+      <div className={headerstyle.logo_container}>
+        <Link to="/">
+          <img
+            className={headerstyle.logo}
+            src={WorldCupLogo}
+            alt="World Cup Logo"
+          ></img>
+        </Link>
         <img
-          className={headerstyle.logo}
-          src={WorldCupLogo}
-          alt="World Cup Logo"
+          onClick={props.clickMenu}
+          className={headerstyle.social_media}
+          src={Menu}
+          alt="menu"
         ></img>
-      </Link>
+      </div>
       <div className={headerstyle.social_media_container}>
         <img
           className={headerstyle.social_media}
@@ -32,12 +40,6 @@ const Header = (props) => {
           className={headerstyle.social_media}
           src={Instagram}
           alt="instagram_log"
-        ></img>
-        <img
-          onClick={props.clickMenu}
-          className={headerstyle.social_media}
-          src={Menu}
-          alt="menu"
         ></img>
       </div>
     </div>
