@@ -66,7 +66,17 @@ class App extends Component {
                   component={DetailedTeam}
                 ></Route>
                 <Route exact path="/caf" component={TeamsAfrica}></Route>
+                <Route
+                  exact
+                  path="/caf/:country"
+                  component={DetailedTeam}
+                ></Route>
                 <Route exact path="/afc" component={TeamsAsia}></Route>
+                <Route
+                  exact
+                  path="/afc/:country"
+                  component={DetailedTeam}
+                ></Route>
                 <Route
                   exact
                   path="/conmebol"
@@ -74,10 +84,25 @@ class App extends Component {
                 ></Route>
                 <Route
                   exact
+                  path="/conmebol/:country"
+                  component={DetailedTeam}
+                ></Route>
+                <Route
+                  exact
                   path="/concacaf"
                   component={TeamsNorthAmerica}
                 ></Route>
+                <Route
+                  exact
+                  path="/concacaf/:country"
+                  component={DetailedTeam}
+                ></Route>
                 <Route exact path="/uefa" component={TeamsEurope}></Route>
+                <Route
+                  exact
+                  path="/uefa/:country"
+                  component={DetailedTeam}
+                ></Route>
               </Switch>
             </div>
           </div>

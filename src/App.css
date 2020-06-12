@@ -7,7 +7,6 @@
   grid-column-start: 1;
   grid-column-end: 2;
   width: 15vw;
-  animation-name: navbar_animate 1s forwards;
 }
 
 .home_comp {
@@ -22,15 +21,6 @@
 
 .navbar_hide {
   display: none;
-}
-
-@keyframes navbar_animate {
-  from {
-    display: block;
-  }
-  to {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 414px) {

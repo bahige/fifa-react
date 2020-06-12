@@ -26,7 +26,7 @@ class TeamsAsia extends Component {
       return team.federation === "AFC" ? (
         <Link
           className={teamsStyle.link}
-          to={"/all/" + team.country}
+          to={"/afc/" + team.country}
           key={team.id}
         >
           <div className={teamsStyle.singleTeam}>

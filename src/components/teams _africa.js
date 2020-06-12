@@ -25,7 +25,7 @@ class TeamsAfrica extends Component {
       return team.federation === "CAF" ? (
         <Link
           className={teamsStyle.link}
-          to={"/all/" + team.country}
+          to={"/caf/" + team.country}
           key={team.id}
         >
           <div className={teamsStyle.singleTeam}>

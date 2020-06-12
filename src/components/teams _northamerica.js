@@ -25,7 +25,7 @@ class TeamsNorthAmerica extends Component {
       return team.federation === "CONCACAF" ? (
         <Link
           className={teamsStyle.link}
-          to={"/all/" + team.country}
+          to={"/concacaf/" + team.country}
           key={team.id}
         >
           <div className={teamsStyle.singleTeam} key={team.id}>
