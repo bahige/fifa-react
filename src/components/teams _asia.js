@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import teamsStyle from "../components/teams.module.css";
+import { Link } from "react-router-dom";
 
 class TeamsAsia extends Component {
   constructor(props) {
@@ -23,12 +24,18 @@ class TeamsAsia extends Component {
 
     const teamsList = teams.map((team) => {
       return team.federation === "AFC" ? (
-        <div className={teamsStyle.singleTeam} key={team.id}>
-          <div id={teamsStyle.img_cont}>
-            <img src={team.logo} alt={team.country}></img>
+        <Link
+          className={teamsStyle.link}
+          to={"/all/" + team.country}
+          key={team.id}
+        >
+          <div className={teamsStyle.singleTeam}>
+            <div id={teamsStyle.img_cont}>
+              <img src={team.logo} alt={team.country}></img>
+            </div>
+            <div id={teamsStyle.caption}> {team.country}</div>
           </div>
-          <div id={teamsStyle.caption}> {team.country}</div>
-        </div>
+        </Link>
       ) : null;
     });
 

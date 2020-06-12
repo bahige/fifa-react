@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import teamsStyle from "../components/teams.module.css";
+import { Link } from "react-router-dom";
 
 class Teams extends Component {
   constructor(props) {
@@ -8,7 +9,6 @@ class Teams extends Component {
     this.state = { teams: [], error: "" };
   }
 
-  //   url = "https://api.npoint.io/9b010625e1bef21d1aea";
   url = "https://extendsclass.com/api/json-storage/bin/bdbeaed";
 
   componentDidMount() {
@@ -23,12 +23,18 @@ class Teams extends Component {
 
     const teamsList = teams.map((team) => {
       return (
-        <div className={teamsStyle.singleTeam} key={team.id}>
-          <div id={teamsStyle.img_cont}>
-            <img src={team.logo} alt={team.country}></img>
+        <Link
+          className={teamsStyle.link}
+          to={"/all/" + team.country}
+          key={team.id}
+        >
+          <div className={teamsStyle.singleTeam}>
+            <div id={teamsStyle.img_cont}>
+              <img src={team.logo} alt={team.country}></img>
+            </div>
+            <div id={teamsStyle.caption}> {team.country}</div>
           </div>
-          <div id={teamsStyle.caption}> {team.country}</div>
-        </div>
+        </Link>
       );
     });
 

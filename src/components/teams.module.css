@@ -20,13 +20,17 @@
   transform: scale(1.1);
 }
 
+.link {
+  text-decoration: none;
+}
+
 #caption {
   background-color: #972a29;
   font-size: 24px;
   font-weight: bold;
   color: white;
   text-align: center;
-  width: 250px;
+  width: 80%;
   height: 50px;
   line-height: 50px;
 }

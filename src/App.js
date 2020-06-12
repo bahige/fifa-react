@@ -11,6 +11,7 @@ import TeamsAsia from "./components/teams _asia";
 import TeamsEurope from "./components/teams _europe";
 import TeamsSouthAmerica from "./components/teams _southamerica";
 import TeamsNorthAmerica from "./components/teams _northamerica";
+import DetailedTeam from "./components/detailed_team";
 
 class App extends Component {
   constructor(props) {
@@ -58,7 +59,12 @@ class App extends Component {
             <div className={routedCompClass}>
               <Switch>
                 <Route exact path="/" component={HomeComponent}></Route>
-                <Route exact path="/all_teams" component={Teams}></Route>
+                <Route exact path="/all" component={Teams}></Route>
+                <Route
+                  exact
+                  path="/all/:country"
+                  component={DetailedTeam}
+                ></Route>
                 <Route exact path="/caf" component={TeamsAfrica}></Route>
                 <Route exact path="/afc" component={TeamsAsia}></Route>
                 <Route

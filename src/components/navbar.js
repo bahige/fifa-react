@@ -5,22 +5,22 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className={navbarstyle.navbar}>
-      <Link className={navbarstyle} to="/all_teams">
+      <Link className={navbarstyle.link} to="/all">
         <div> All Federations </div>
       </Link>
-      <Link className={navbarstyle} to="/afc">
+      <Link className={navbarstyle.link} to="/afc">
         <div> AFC </div>
       </Link>
-      <Link className={navbarstyle} to="/caf">
+      <Link className={navbarstyle.link} to="/caf">
         <div> CAF </div>
       </Link>
-      <Link className={navbarstyle} to="/concacaf">
+      <Link className={navbarstyle.link} to="/concacaf">
         <div> CONCACAF </div>
       </Link>
-      <Link className={navbarstyle} to="/conmebol">
+      <Link className={navbarstyle.link} to="/conmebol">
         <div> CONMEBOL </div>
       </Link>
-      <Link className={navbarstyle} to="/uefa">
+      <Link className={navbarstyle.link} to="/uefa">
         <div> UEFA </div>
       </Link>
     </div>

@@ -1,12 +1,10 @@
-img {
+.back_image {
   height: 100%;
   width: 100%;
 }
 
 .container {
   height: 100vh;
-  top: 0;
-  left: 0;
   box-sizing: border-box;
   background-color: goldenrod;
 }
