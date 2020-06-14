@@ -27,6 +27,7 @@
   width: 20vw;
   height: 20vw;
   border-radius: 20vw;
+  border: black solid 1px;
 }
 
 .caption,
