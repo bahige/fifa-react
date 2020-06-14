@@ -33,7 +33,7 @@ select option {
   font-size: 14px;
 }
 
-select_div {
+.select_div {
   border: solid white 1px;
 }
 

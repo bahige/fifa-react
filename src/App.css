@@ -33,3 +33,25 @@
     width: 75vw;
   }
 }
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .navbar {
+    width: 25vw;
+  }
+
+  .home_comp {
+    grid-column-start: 2;
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    width: 25vw;
+  }
+
+  .home_comp {
+    grid-column-start: 2;
+    width: 75vw;
+  }
+}
