@@ -81,6 +81,7 @@ button {
 
   .title,
   button {
+    font-size: 20px;
     width: 50vw;
     padding: 1vw;
   }
